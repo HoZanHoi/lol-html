@@ -26,7 +26,7 @@ impl TextDecoder {
             encoding,
             pending_text_streaming_decoder: None,
             // TODO make adjustable
-            text_buffer: String::from_utf8(vec![0u8; 1024]).unwrap(),
+            text_buffer: String::from_utf8(vec![0u8; 102400]).unwrap(),
             last_text_type: TextType::Data,
         }
     }
